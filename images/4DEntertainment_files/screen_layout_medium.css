@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* Layout Medium Screens */
+
+header { height:900px; background: url(../images/city01_medium.jpg) no-repeat 0px 0px;}
+
+header a.logo {
+	width: 115px;
+	height: 70px;
+	top: 20px; right: 20px;
+	background-image: url(../images/logo_medium.png);
+	}
+
+nav { top: 50px; }
+nav a { margin-right: 20px; }
+
+/*Nav styles*/
+.pageHeader nav {
+	background: rgba(35, 31, 32, .8);
+	height: 150px; /*header thread*/
+	width: 800px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.pageHeader ul {
+	list-style: none;
+	margin-left: 50px;
+}
+.pageHeader li {
+	float: left;
+	margin-right: 28px;
+}
+.pageHeader a {
+	color: white;
+	text-decoration: none;
+	line-height: 65px;/*45*/
+	font-size: .9em;
+	text-transform: lowercase;
+}
+.pageHeader a:hover {
+	color: rgb(25, 100, 150);
+	background: none;
+}
+
+

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* Global Content Formatting and Styles */
+
+
+
+body { 
+	color: #575c7a;
+	line-height: 1.5em;
+	font-family: Arial;
+	font-size 14px;
+	background: #000; /*url(../images/city01_main02.jpg) no-repeat 0px 0px;*/
+}
+
+.page{	
+	max-width: 1920px;
+	margin: 0px auto 0px auto;
+	position: relative;
+	background-color: #fff;	
+}
+
+h1 { font-size: 2em; font-weight: normal; color: #a6430a; margin: 0 0 .5em 0; }
+h2 { font-size: 1.7em; margin: 0 0 1em 0; }
+h3 { font-size: 1.5em; margin: 0 0 1em 0; }
+p { margin: 0 0 .75em 0; }
+a { color: #de9000; }
+a:hover { color: #00geff; }
+
+footer { font-size: .85em; color: #9ba0bd: background-color: #575c7a; 10px 10px 10px 0px; }
+
+a.arrow {
+	text-transfrom: uppercase;
+	font-size: .9em;
+	font-weight: bold;
+	text-decoration: none;
+	margin: .5em 0 0 0;
+	padding: 0px 12px 0px 0px;
+	background: url(../images/cta_arrow.png) no-repeat right 0px;
+}
+
+Header styles
+.pageHeader h1{
+	width: 160px;
+	height: 150px;
+	text-indent: -9000em;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	/*background: black url(../images/logo_large.png) no-repeat;*/
+	z-index: 5;
+	margin: 0;
+}
+
+.pageHeader h1 a {
+	display: block;
+	width: 160px;
+	height: 150px;
+	margin: 0;
+}
+

@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+/* Global Content Formatting and Styles */
+@font-face {
+    font-family: alienleague;
+    src: url("../fonts/alien_league/alienleague.ttf");
+}
+@font-face {
+    font-family: alienleaguebold;
+    src: url("../fonts/alien_league/alienleaguebold.ttf");
+}
+@font-face {
+    font-family: MyriadPro;
+    src: url("../fonts/Myriad_Pro/MyriadPro-Semibold.otf");
+}
+@font-face {
+    font-family: MyriadProLight;
+    src: url("../fonts/Myriad_Pro/MyriadPro-Light.otf");
+}
+body { 
+	color: #575c7a;
+	line-height: 1.0em;
+	font-family: alienleague;
+	font-size 14em;
+	/*background: ; url(../images/city01_main02.jpg) no-repeat 0px 0px;*/
+	background: rgb(21,21,22) url(../images/background.jpg) no-repeat center /*150px*/ top fixed;
+}
+
+.main {
+	height: 1300px;	
+}
+
+h1 { font-size: 1.5em; font-family:  alienleaguebold; color: #787881; text-align: left; margin: 0 0 1em 0; }
+h2 { font-size: 1.0em; font-family:  MyriadProLight; color: white; text-align: left; line-height: 2.0em; margin: 0 0 0 0; }
+h3 { font-size: 1.0em; font-family:  MyriadPro;  color: white; text-align: right; margin: 0 20.5em 0 0; }
+h4 { font-size: 0.8em; font-family:  MyriadProLight; text-align: left; color: white; margin: -.25em 0 0 14em; }
+h5 { font-size: 1.0em; font-family:  alienleague; color: white; text-align: left; margin: 0 0 0 10em; }
+h6 { font-size: 1.0em; font-family: alienleague; color: white; text-align: right; margin: -1.1em 8em 0 0;}
+h7 { font-size: 1.5em; font-family:  alienleaguebold; color: #787881; text-align: center; margin: 0 0 1em 0; }
+p { margin: 0 0 .75em 0; }
+a { color: #fff; }
+
+button {
+   position: relative;  
+   top:  0; /* offset btn according to your needs */
+   left: 0; /* offset btn according to your needs */
+}
+
+a:hover { color: #00geff; }
+
+
+.container {
+	/*outline:1px solid red;*/
+}
+
+
+.circle img {
+	position: absolute;
+    border-radius: 50%;
+	height: 200px;
+	width: 200px;
+    display: block;
+	margin: 0 auto 0 auto;
+	
+}
+
+
+header{	
+	max-width: 1000px;
+	max-height: 100px;
+	margin: auto;
+	position: absolute;
+	background:#000;
+			
+}
+
+
+/*Nav styles*/
+header#pageHeader {
+	max-width: 100%;
+	background: rgba(0, 0, 0, .8);
+	position: relative;
+	outline: 1px solid white;
+}
+.pageNav {
+	/*background: rgba(35, 31, 32, .5);*/
+	height: 150px; 
+	width: 1000px;
+	position: relative;/*absolute fix*/
+	text-align: center;
+	margin: 0px auto 0px auto;/*left 50px*/
+	
+}
+.pageNav a {
+	color: white;
+	text-decoration: none;
+	line-height: 100px;
+	font-size: 1.5em;
+	margin: 0 2.1em 0 2.4em; 
+	text-transform: uppercase;	
+	
+}	
+.pageNav a:hover {
+	color: rgb(25, 100, 150);
+	background: none;
+	
+}
+.pageNav ul {
+  text-align: center;
+  margin-top: 0;
+  margin-left: 140px;
+  padding: 0;
+  list-style: none;
+  /*-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);*/
+ 
+}
+.pageNav ul li {
+  display: inline-block;
+  margin-right: 0px;
+  position: relative;
+  padding: 10px 20px 0 0;/* spacing*/
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  
+}
+.pageNav ul li:hover {
+  color: rgb(25, 100, 150);
+  background: none;
+}
+.pageNav ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 100px;
+  left: -150px;
+  width: 200px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+	
+}
+.pageNav ul li ul li { 
+  padding: 10px 10px;
+  
+  background: rgba(0, 0, 0, .8); 
+  display: block; 
+  color: #000;
+  text-shadow: 0 -1px 0 #000;
+  
+}
+.pageNav ul li ul li:hover { background: rgba(255, 255, 255, .9) }
+.pageNav ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/*grow box*/
+.box {
+	display: inline-block;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: -webkit-transform;
+	transition-property: transform;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	
+}
+.box:hover {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.6);
+}
+.box:before,
+.box:after {
+	color: rgb(25, 100, 150);
+	display: block;
+	background: none;
+	clear: both;
+}
+.clear-fix { clear: both; line-height: 1px; }
+
+.clearfix:before {
+	content: "";
+	display: table;
+}
+/* border fade*/
+.enter {
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  /*box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px rgba(0, 0, 0, 0);*/
+}
+
+.enter:hover {
+  box-shadow: inset 0 0 0 4px #666666, 0 0 1px rgba(0, 0, 0, 0);
+}
+.oculus {
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  /*box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px rgba(0, 0, 0, 0);*/
+}
+
+.oculus:hover {
+  box-shadow: inset 0 0 0 4px #666666, 0 0 1px rgba(0, 0, 0, 0);
+}
+
+
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+nav { top: 50px; }
+nav a { margin-right: 10px; }
+	
+/*footer*/
+footer { 
+	max-width: 100%;
+	height: 300px;
+	margin: auto;
+	position: relative;
+	/*background-color: #fff;	*/
+	padding: 0 auto 0 auto; 
+	
+	outline: 1px solid white;
+}
+
+/*footer styles	*/
+footer#pageFooter {
+	background: rgba(0, 0, 0, .8);
+	color: rgb(65, 64, 66);
+	position: relative;
+	bottom: 0px;
+	left: 0px;	
+
+}
+.footerNav {
+	top: 0px;
+	height: 0px; /*200px*/
+	width: 1000px;/*change to 150 for small layout*/
+	position: relative;
+	margin-left: auto;/*450px*/
+	margin-right: auto;
+	
+}
+
+footer p {
+	font-family: alienleague;
+	font-size: 1.0em;
+	text-align: left;
+	z-index: auto;
+	/*float: left;*/
+	margin-top: -200px;
+	padding-left: 30px;
+
+}
+
+footer p a{
+	
+	text-decoration: none;
+}
+footer a:hover {
+	font-size: 1.1em;
+	color:rgb(25, 100, 150); 
+}
